@@ -1,4 +1,5 @@
-cedc
-====
+Hi!  This is the readme file for the official Clemson Engineers for Developing Countries github!
 
-Clemson Engineers for Developing Countries Website
+Contributors:
+sstickl:	Shawn Stickle
+rosscodes:	Ross Creighton
