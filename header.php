@@ -33,9 +33,4 @@
 			</div>
 		</div>
 	<div id="content">
-		<div class="container">
-		content
-		</div>
-	</div>
-</body>
-</html>
+		<div class="container">	
