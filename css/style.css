@@ -1,7 +1,5 @@
-#content{
-	position: relative;
-	top: 248px;
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+.content{
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;;
 }
 
 #header{
