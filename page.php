@@ -1,5 +1,5 @@
 <?php	//HEADER
-require( 'header.html' );?>
+require( 'header.php' );?>
 
 <?php
 	$page = $_GET["page"];	//get what page we want to load
@@ -14,4 +14,4 @@ require( 'header.html' );?>
 </div>
 
 <?php	//FOOTER
-require( 'footer.html' );?>
+require( 'footer.php' );?>
