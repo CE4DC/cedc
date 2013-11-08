@@ -20,7 +20,7 @@
 						<strong>
 							<a href="#">Home</a>
 							<a href="#">About Us</a>
-							<a href="#">Projects</a>
+							<a href="page.php?page=projects.html">Projects</a>
 							<a href="#">In The Classroom</a>
 							<a href="#">Intern Program</a>
 							<a href="#">Trips</a>
