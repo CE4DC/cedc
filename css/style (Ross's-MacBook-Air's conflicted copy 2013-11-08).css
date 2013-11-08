@@ -1,0 +1,64 @@
+#content{
+	position: relative;
+	top: 248px;
+	width: 100%;
+	min-height 10000px;
+	
+}
+
+#header-o{
+	background-color: #EA6A20;
+	padding: 25px 0px 25px 0px;
+	color: #000;	
+}
+
+
+#logo{
+	margin: 0px 30px 0px 30px;
+}
+
+#nav{
+	background-color: #474747; /*#43484D*/
+	padding: 10px 10px 10px 10px;
+	color: #ffffff;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+#nav-style{
+	font-family: "proxima-nova",Arial!important;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+#nav-style a:link{
+	text-decoration: none;
+	margin-left: 7px;
+	margin-right: 7px;
+	color: #222;
+	text-shadow: 0px 2px 3px #555;
+}
+
+#nav-style a:hover{
+	color: #ffffff;	
+	
+}
+
+#title{
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;;
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase
+}
+
+#logo{
+	padding: 0px 10px 0px 10px;
+}
+
+body{
+	padding: 0px;
+}
+
