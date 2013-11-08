@@ -1,10 +1,5 @@
-#content{
-	position: relative;
-	top: 248px;
-	width: 100%;
-	min-height 10000px;
-	background-color: #fff;
-	padding: 0px 0px 1500px 0px;
+.content{
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;;
 }
 
 #header{
