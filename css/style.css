@@ -1,8 +1,5 @@
-.content{
-	position: relative;
-	top: 248px;
-	padding-top: 25px;
-	text-align: center;
+body{
+	padding: 0px;
 }
 
 #header{
@@ -21,52 +18,6 @@
 	background: linear-gradient(90deg, rgb(187, 85, 26), rgb(234, 106, 32) , rgb(187, 85, 26) );
 }
 
-
-#logo{
-	margin: 0px 30px 0px 30px;
-}
-
-#nav{
-	background-color: #474747; /*#43484D*/
-	padding: 10px 10px 10px 10px;
-	color: #ffffff;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
-	position: relative;
-	top: 248px;
-	height: 39px;
-}
-
-#nav-style{
-	font-family: "proxima-nova",Arial!important;
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 500;
-	letter-spacing: 1px;
-}
-
-#init{
-	color: #fff;
-	font-family: "proxima-nova",Arial!important;
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 500;
-	letter-spacing: 1px;
-}
-
-#nav-style a:link{
-	text-decoration: none;
-	margin-left: 7px;
-	margin-right: 7px;
-	color: #222;
-	text-shadow: 0px 2px 3px #555;
-}
-
-#nav-style a:hover{
-	color: #ffffff;	
-	
-}
-
 #title{
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;;
 	font-size: 15px;
@@ -75,11 +26,49 @@
 	text-transform: uppercase
 }
 
-#logo{
-	padding: 0px 10px 0px 10px;
+#title img{
+	margin: 0px 30px 0px 30px;
 }
 
-body{
-	padding: 0px;
+#nav{
+	background-color: #474747; /*#43484D*/
+	padding: 10px 0px 10px 0px;	color: #ffffff;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	position: relative;
+	top: 248px;
+	height: 39px;
+	font-family: "proxima-nova",Arial!important;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 1px;
+
 }
+
+#nav a{
+	text-decoration: none;
+	margin-left: 7px;
+	margin-right: 7px;
+	color: #222;
+	text-shadow: 0px 2px 3px #555;
+}
+
+#nav a:hover{
+	color: #ffffff;		
+}
+
+#nav a:visited{
+	text-decoration: none;
+	color: #222;
+}
+
+
+.content{
+	position: relative;
+	top: 287px;
+}
+
+
+
 
