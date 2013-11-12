@@ -4,46 +4,58 @@ body{
 
 #header{
 	position: fixed;
-	z-index: 0;
+	top: 0px;
 	width: 100%;
-	height: 248px;
 	background-color: #EA6A20;
 	padding: 25px 0px 25px 0px;
-	color: #000;
-	background: rgb(234, 106, 32);
-	background: -moz-linear-gradient(0deg,rgb(187, 85, 26), rgb(234, 106, 32) , rgb(187, 85, 26) );
-	background: -webkit-linear-gradient(0deg, rgb(187, 85, 26), rgb(234, 106, 32) , rgb(187, 85, 26) );
-	background: -o-linear-gradient(0deg,rgb(187, 85, 26), rgb(234, 106, 32) , rgb(187, 85, 26) );
-	background: -ms-linear-gradient(0deg, rgb(187, 85, 26), rgb(234, 106, 32) , rgb(187, 85, 26) );
+	color: #fff;
 	background: linear-gradient(90deg, rgb(187, 85, 26), rgb(234, 106, 32) , rgb(187, 85, 26) );
-}
-
-#title{
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	font-size: 15px;
 	text-align: center;
 	letter-spacing: 2px;
-	text-transform: uppercase
+	text-transform: uppercase;
+	max-height: 248px;
 }
 
-#title img{
+.header-text{
+	display: inline-block;	
+}
+
+#header img{
 	margin: 0px 30px 0px 30px;
+}
+
+#header-collapse{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: #EA6A20;
+	background: linear-gradient(90deg, rgb(187, 85, 26), rgb(234, 106, 32) , rgb(187, 85, 26) );
+	display: none;
+	padding: 10px 0px 10px 0px;
+	max-height: 50px;
+	z-index: 100;
 }
 
 #nav{
 	background-color: #474747; /*#43484D*/
-	padding: 10px 0px 10px 0px;	color: #ffffff;
+	background: linear-gradient(90deg, #393939, #474747, #393939);
+	padding: 10px 0px 10px 0px;
+	color: #ffffff;
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
-	position: relative;
-	top: 248px;
-	height: 39px;
+	position: absolute;
+	top: 231px;
 	font-family: "proxima-nova",Arial!important;
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 500;
 	letter-spacing: 1px;
-
+	height: 39px;
+	z-index: 10;
+	width: 100%;
+	margin-top: 0px;
 }
 
 #nav a{
@@ -54,20 +66,31 @@ body{
 	text-shadow: 0px 2px 3px #555;
 }
 
-#nav a:hover{
-	color: #ffffff;		
+#nav a:active{
+	color: #ffffff;
 }
 
 #nav a:visited{
-	text-decoration: none;
 	color: #222;
+}
+
+#nav a:hover{
+	color: #ffffff;		
 }
 
 
 .content{
 	position: relative;
-	top: 287px;
+	top: 231px;
+	min-height: 1000px;
+	padding: 100px 0px 1500px 0px;
+	background-color: #fff;
+	background: linear-gradient(90deg, rgb(204,204,204), rgb(255, 255, 255) , rgb(204,204,204));
+	z-index: 0;
+	color: #000;
 }
+
+
 
 
 

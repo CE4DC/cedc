@@ -2,15 +2,15 @@
         <div class="container">
                 <center>
                         <strong>
-                                <a href="page.php?page=index.html">Home</a>
-                                <a href="#">About Us</a>
-                                <a href="page.php?page=projects.html">Projects</a>
-                                <a href="#">In The Classroom</a>
-                                <a href="#">Intern Program</a>
-                                <a href="#">Trips</a>
-                                <a href="#">Donate</a>
-                                <a href="#">Contact</a>
-                                <a href="#">Gallery</a>
+                                <a href="page.php?page=index.html" id="home">Home</a>
+                                <a href="#" id="about">About Us</a>
+                                <a href="page.php?page=projects.html" id="projects">Projects</a>
+                                <a href="#" id="classroom">In The Classroom</a>
+                                <a href="#" id="intern">Intern Program</a>
+                                <a href="#" id="trips">Trips</a>
+                                <a href="#" id="donate">Donate</a>
+                                <a href="#" id="contact">Contact</a>
+                                <a href="#" id="gallery">Gallery</a>
                         </strong>					
                 </center>
         </div>
