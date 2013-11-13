@@ -1,0 +1,9 @@
+#header,
+#header-collapse{
+    background-color: rgb(162,80,22);
+    background: linear-gradient(90deg, rgb(130,64,18), rgb(162,80,22) , rgb(130,64,18) );
+}
+
+#contact{
+    color: #fff;
+}

@@ -1,0 +1,9 @@
+#header,
+#header-collapse{
+    background-color: rgb(134,137,140);
+    background: linear-gradient(90deg, rgb(107,110,112), rgb(134,137,140) , rgb(107,110,112) );
+}
+
+#donate{
+    color: #fff;
+}

@@ -1,0 +1,9 @@
+#header,
+#header-collapse{
+    background-color: rgb(104,92,83);
+    background: linear-gradient(90deg, rgb(83,74,66), rgb(104,92,83) , rgb(83,74,66) );
+}
+
+#projects{
+    color: #fff;
+}

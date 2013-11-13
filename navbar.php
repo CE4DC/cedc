@@ -2,15 +2,17 @@
         <div class="container">
                 <center>
                         <strong>
-                                <a href="page.php?page=index.html" id="home">Home</a>
-                                <a href="#" id="about">About Us</a>
-                                <a href="page.php?page=projects.html" id="projects">Projects</a>
-                                <a href="#" id="classroom">In The Classroom</a>
-                                <a href="#" id="intern">Intern Program</a>
-                                <a href="#" id="trips">Trips</a>
-                                <a href="#" id="donate">Donate</a>
-                                <a href="#" id="contact">Contact</a>
-                                <a href="#" id="gallery">Gallery</a>
+                                <ul id="nav-list">
+                                        <li><a href="page.php?page=index" id="home">Home</a></li>
+                                        <li><a href="page.php?page=about" id="about">About Us</a></li>
+                                        <li><a href="page.php?page=projects" id="projects">Projects</a></li>
+                                        <li><a href="page.php?page=classroom" id="classroom">In The Classroom</a></li>
+                                        <li><a href="page.php?page=intern" id="intern">Intern Program</a></li>
+                                        <li><a href="page.php?page=trips" id="trips">Trips</a></li>
+                                        <li><a href="page.php?page=donate" id="donate">Donate</a></li>
+                                        <li><a href="page.php?page=contact" id="contact">Contact</a></li>
+                                        <li><a href="page.php?page=gallery" id="gallery">Gallery</a></li>
+                                </ul>
                         </strong>					
                 </center>
         </div>

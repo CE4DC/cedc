@@ -6,10 +6,8 @@ body{
 	position: fixed;
 	top: 0px;
 	width: 100%;
-	background-color: #EA6A20;
 	padding: 25px 0px 25px 0px;
 	color: #fff;
-	background: linear-gradient(90deg, rgb(187, 85, 26), rgb(234, 106, 32) , rgb(187, 85, 26) );
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	font-size: 15px;
 	text-align: center;
@@ -30,8 +28,6 @@ body{
 	position: fixed;
 	top: 0px;
 	width: 100%;
-	background-color: #EA6A20;
-	background: linear-gradient(90deg, rgb(187, 85, 26), rgb(234, 106, 32) , rgb(187, 85, 26) );
 	display: none;
 	padding: 10px 0px 10px 0px;
 	max-height: 50px;
@@ -58,7 +54,16 @@ body{
 	margin-top: 0px;
 }
 
-#nav a{
+#nav-list{
+	list-style: none;
+}
+
+#nav-list li{
+	display: inline;
+	margin: 0px;
+}
+
+#nav-list a{
 	text-decoration: none;
 	margin-left: 7px;
 	margin-right: 7px;
@@ -66,15 +71,15 @@ body{
 	text-shadow: 0px 2px 3px #555;
 }
 
-#nav a:active{
+#nav-list a:active{
 	color: #ffffff;
 }
 
-#nav a:visited{
+#nav-list a:visited{
 	color: #222;
 }
 
-#nav a:hover{
+#nav-list a:hover{
 	color: #ffffff;		
 }
 

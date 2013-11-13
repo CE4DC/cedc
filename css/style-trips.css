@@ -1,0 +1,9 @@
+#header,
+#header-collapse{
+    background-color: rgb(58,73,88);
+    background: linear-gradient(90deg, rgb(46,58,70), rgb(58,73,88) , rgb(46,58,70) );
+}
+
+#trips{
+    color: #fff;
+}
