@@ -7,6 +7,7 @@
     ?>
 </head>
 <body>
+<div id="pagecontainer">
 	
     <?php
         include( 'header.php' );
@@ -20,8 +21,13 @@
 	    ?>
 	</div>
     </div>
+
+	<?php
+		include( 'footer.php' );
+	?>
     
     <?php include( 'scripts.php'); ?>
-                  
+	
+</div>
 </body>
 </html>

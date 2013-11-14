@@ -1,5 +1,6 @@
 #header,
-#header-collapse{
+#header-collapse,
+#footer{
     background-color: rgb(86,46,25);
     background: linear-gradient(90deg, rgb(69,37,20), rgb(86,46,25) , rgb(69,37,20) );
 }

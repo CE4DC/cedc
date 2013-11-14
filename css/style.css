@@ -16,6 +16,15 @@ body{
 	max-height: 248px;
 }
 
+#footer{
+	padding: 25px 25px 25px 25px;
+	color: #fff;
+	width: 100%;
+	position: relative;
+	top: 231px;
+	text-align: right;
+}
+
 .header-text{
 	display: inline-block;	
 }
@@ -87,16 +96,10 @@ body{
 .content{
 	position: relative;
 	top: 231px;
-	min-height: 1000px;
-	padding: 100px 0px 1500px 0px;
+	padding: 150px 0px 50px 0px;
+	min-height: 600px;
 	background-color: #fff;
 	background: linear-gradient(90deg, rgb(204,204,204), rgb(255, 255, 255) , rgb(204,204,204));
 	z-index: 0;
 	color: #000;
 }
-
-
-
-
-
-
