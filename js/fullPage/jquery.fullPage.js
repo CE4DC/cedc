@@ -129,8 +129,8 @@
 				$(this).css('padding', options.paddingTop  + ' 0 ' + options.paddingBottom + ' 0');
 			}
 			
-			if (typeof options.slidesColor[index] !==  'undefined') {
-				$(this).css('background-color', options.slidesColor[index]);
+			if (typeof options.slidesColor[0] !==  'undefined') {
+				$(this).css('background-color', options.slidesColor[0]);
 			}
 
 			if (typeof options.anchors[index] !== 'undefined') {
