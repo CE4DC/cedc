@@ -7,8 +7,7 @@
     ?>
 </head>
 <body>
-<div id="pagecontainer">
-	
+
     <?php
         include( 'header.php' );
 	include( 'navbar.php' );
@@ -28,6 +27,5 @@
     
     <?php include( 'scripts.php'); ?>
 	
-</div>
 </body>
 </html>
