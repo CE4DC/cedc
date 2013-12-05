@@ -14,11 +14,11 @@
     ?>
     
     <div class="content">
-	<div class="container">
-	    <?php
-		include( 'pages/' . $page .'.html');
-	    ?>
-	</div>
+		<div class="container">
+			<?php
+			include( 'pages/' . $page .'.html');
+			?>
+		</div>
     </div>
 
 	<?php
