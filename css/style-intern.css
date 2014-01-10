@@ -1,0 +1,10 @@
+#header,
+#header-collapse,
+#footer{
+    background-color: rgb(181,195,39);
+    background: linear-gradient(90deg, rgb(145,156,31), rgb(181,195,39) , rgb(145,156,31) );
+}
+
+#intern{
+    color: #fff;
+}

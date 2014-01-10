@@ -1,17 +1,31 @@
-<?php	//HEADER
-require( 'header.php' );?>
+<! Doctype html >
+<html>
+<head>
+    <?php
+    $page = $_GET["page"];
+    require( 'head.php' );
+    ?>
+</head>
+<body>
 
-<?php
-	$page = $_GET["page"];	//get what page we want to load
-	//Let's wait to incldue this until the other page
-	//$article = $_GET['article'];
-?>
+    <?php
+        include( 'header.php' );
+	include( 'navbar.php' );
+    ?>
+    
+    <div class="content">
+		<div class="container">
+			<?php
+			include( 'pages/' . $page .'.html');
+			?>
+		</div>
+    </div>
 
-<div id="content" style="clear: both;">
-	<!--	What was this for?
-	<link href="css/styles.css" rel="stylesheet" type="text/css" />-->
-	<?php include( 'pages/' . $page ); ?>
-</div>
-
-<?php	//FOOTER
-require( 'footer.php' );?>
+	<?php
+		include( 'footer.php' );
+	?>
+    
+    <?php include( 'scripts.php'); ?>
+	
+</body>
+</html>
