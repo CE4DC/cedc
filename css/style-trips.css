@@ -1,14 +1,21 @@
+/*
+	Clemson Engineers for Developing Countries
+	Trips page CSS
+	Standard: CSS3
+	Description:	This is the CSS pertaining to only the Trips page.
+*/
+
 #header,
 #header-collapse,
-#footer{
+#footer{	/*	Change the background of the header and footer to the page color	*/
     background-color: rgb(58,73,88);
     background: linear-gradient(90deg, rgb(46,58,70), rgb(58,73,88) , rgb(46,58,70) );
 }
 
-#trips{
+#trips{	/*	Make the page text in the navbar light up	*/
     color: #fff;
 }
 
-.lead{
+.lead{	/*	Change font text next to trip pictures	*/
 	font-size: 16px;
 }

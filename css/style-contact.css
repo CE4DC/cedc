@@ -1,10 +1,17 @@
+/*
+	Clemson Engineers for Developing Countries
+	Contact Us page CSS
+	Standard: CSS3
+	Description:	This is the CSS pertaining to only the Contact Us page.
+*/
+
 #header,
 #header-collapse,
-#footer{
+#footer{	/*	Change the background of the header and footer to the page color	*/
     background-color: rgb(162,80,22);
     background: linear-gradient(90deg, rgb(130,64,18), rgb(162,80,22) , rgb(130,64,18) );
 }
 
-#contact{
+#contact{	/*	Make the page text in the navbar light up	*/
     color: #fff;
 }

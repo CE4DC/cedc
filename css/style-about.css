@@ -1,10 +1,17 @@
+/*
+	Clemson Engineers for Developing Countries
+	About Us page CSS
+	Standard: CSS3
+	Description:	This is the CSS pertaining to only the About Us page.
+*/
+
 #header,
 #header-collapse,
-#footer{
+#footer{	/*	Change the background of the header and footer to the page color	*/
     background-color: rgb(16,157,192);
     background: linear-gradient(90deg, rgb(0,126,154), rgb(16,157,192) , rgb(0,126,154));
 }
 
-#about{
+#about{	/*	Make the page text in the navbar light up	*/
     color: #fff;
 }

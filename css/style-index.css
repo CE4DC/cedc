@@ -1,11 +1,18 @@
+/*
+	Clemson Engineers for Developing Countries
+	Index page CSS
+	Standard: CSS3
+	Description:	This is the CSS pertaining to only the Index page.
+*/
+
 #header,
 #header-collapse,
-#footer{
+#footer{	/*	Change the background of the header and footer to the page color	*/
     background-color: #EA6A20;
     background: linear-gradient(90deg, rgb(187, 85, 26), rgb(234, 106, 32) , rgb(187, 85, 26) );
 }
 
-#home{
+#home{	/*	Make the page text in the navbar light up	*/
     color: #fff;
 }
 

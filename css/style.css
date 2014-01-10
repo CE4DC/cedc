@@ -1,8 +1,13 @@
-body{
-	padding: 0px;
-}
+/*
+	Clemson Engineers for Developing Countries
+	Website CSS
+	Standard: CSS3
+	Description:	This is the CSS pertaining to the entire site.
+*/
 
-#header{
+/*	Header Styling	*/
+
+#header{	/*	General uncompressed header styling	*/
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -16,25 +21,15 @@ body{
 	max-height: 248px;
 }
 
-#footer{
-	padding: 15px 25px 15px 25px;
-	color: #fff;
-	width: 100%;
-	position: relative;
-	top: 231px;
-	text-align: right;
-	font-size: 9px;
-}
-
-.header-text{
+.header-text{	/*	Styling of text next to logo	*/
 	display: inline-block;	
 }
 
-#header img{
+#header img{	/*	Styling of logo	*/
 	margin: 0px 30px 0px 30px;
 }
 
-#header-collapse{
+#header-collapse{	/*	Styling of compressed header	*/
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -44,7 +39,9 @@ body{
 	z-index: 100;
 }
 
-#nav{
+/*	Navbar Styling	*/
+
+#nav{	/*	General navbar styling	*/
 	background-color: #474747; /*#43484D*/
 	background: linear-gradient(90deg, #393939, #474747, #393939);
 	padding: 10px 0px 10px 0px;
@@ -64,16 +61,16 @@ body{
 	margin-top: 0px;
 }
 
-#nav-list{
+#nav-list{	/*	Make those pesky dots not show up	*/
 	list-style: none;
 }
 
-#nav-list li{
+#nav-list li{	/*	Make the list horizontal	*/
 	display: inline;
 	margin: 0px;
 }
 
-#nav-list a{
+#nav-list a{	/*	Link colors	*/
 	text-decoration: none;
 	margin-left: 7px;
 	margin-right: 7px;
@@ -81,20 +78,26 @@ body{
 	text-shadow: 0px 2px 3px #555;
 }
 
-#nav-list a:active{
+#nav-list a:active{	/*	Link colors	*/
 	color: #ffffff;
 }
 
-#nav-list a:visited{
+#nav-list a:visited{	/*	Link colors	*/
 	color: #222;
 }
 
-#nav-list a:hover{
+#nav-list a:hover{	/*	Link colors	*/
 	color: #ffffff;		
 }
 
 
-.content{
+/*	Body Styling	*/
+
+body{	/*	Remove the padding on the page	*/
+	padding: 0px;
+}
+
+.content{	/*	First div qualities	*/
 	position: relative;
 	top: 231px;
 	padding: 60px 0px 60px 0px;
@@ -103,4 +106,16 @@ body{
 	background: linear-gradient(90deg, rgb(204,204,204), rgb(255, 255, 255) , rgb(204,204,204));
 	z-index: 0;
 	color: #000;
+}
+
+/*	Footer Styling	*/
+
+#footer{	/*	General footer styling	*/
+	padding: 15px 25px 15px 25px;
+	color: #fff;
+	width: 100%;
+	position: relative;
+	top: 231px;
+	text-align: right;
+	font-size: 9px;
 }

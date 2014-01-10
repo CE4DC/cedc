@@ -1,10 +1,17 @@
+/*
+	Clemson Engineers for Developing Countries
+	Donate page CSS
+	Standard: CSS3
+	Description:	This is the CSS pertaining to only the Donate page.
+*/
+
 #header,
 #header-collapse,
-#footer{
+#footer{	/*	Change the background of the header and footer to the page color	*/
     background-color: rgb(134,137,140);
     background: linear-gradient(90deg, rgb(107,110,112), rgb(134,137,140) , rgb(107,110,112) );
 }
 
-#donate{
+#donate{	/*	Make the page text in the navbar light up	*/
     color: #fff;
 }

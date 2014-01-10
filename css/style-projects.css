@@ -1,10 +1,17 @@
+/*
+	Clemson Engineers for Developing Countries
+	Projects page CSS
+	Standard: CSS3
+	Description:	This is the CSS pertaining to only the Projects page.
+*/
+
 #header,
 #header-collapse,
-#footer{
+#footer{	/*	Change the background of the header and footer to the page color	*/
     background-color: rgb(104,92,83);
     background: linear-gradient(90deg, rgb(83,74,66), rgb(104,92,83) , rgb(83,74,66) );
 }
 
-#projects{
+#projects{	/*	Make the page text in the navbar light up	*/
     color: #fff;
 }

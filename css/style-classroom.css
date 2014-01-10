@@ -1,10 +1,17 @@
+/*
+	Clemson Engineers for Developing Countries
+	Classroom page CSS
+	Standard: CSS3
+	Description:	This is the CSS pertaining to only the Classroom page.
+*/
+
 #header,
 #header-collapse,
-#footer{
+#footer{	/*	Change the background of the header and footer to the page color	*/
     background-color: rgb(86,46,25);
     background: linear-gradient(90deg, rgb(69,37,20), rgb(86,46,25) , rgb(69,37,20) );
 }
 
-#classroom{
+#classroom{		/*	Make the page text in the navbar light up	*/
     color: #fff;
 }
