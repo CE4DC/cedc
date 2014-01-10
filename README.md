@@ -13,7 +13,8 @@ The structure of the website is mostly self-explanatory, but I'll go over it bel
 Basic structure:
 
  File/Folder  -      Description
-/css/         - Contains the Cascading Style Sheet files
+ 
+/css/         - Contains the Cascading Style Sheet files  
 /fonts/       - Contains font files
 /img/         - Contains image files
 /js/          - Contains Javascript files
