@@ -65,7 +65,7 @@
 	list-style: none;
 }
 
-#nav-list li{	/*	Make the list horizontal	*/
+#nav-list li{
 	display: inline;
 	margin: 0px;
 }
