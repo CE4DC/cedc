@@ -1,6 +1,6 @@
 <div id="nav">
     <div class="container">
-        <ul id="nav-list" style="margin:50 auto;">	<!--this centers the UL, but not the LI... workarounds?-->
+        <ul id="nav-list" style="margin:0 auto;">	<!--this centers the UL, but not the LI... workarounds?-->
             <li><a href="page.php?page=index&amp;name=Home" id="home">Home</a></li>
 			<li><a href="page.php?page=about&amp;name=About%20Us" id="about">About Us</a></li>
 			<li><a href="page.php?page=projects&amp;name=Projects" id="projects">Projects</a></li>
