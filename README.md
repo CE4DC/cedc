@@ -28,7 +28,7 @@ Basic structure:
 | /page.php    | PHP file that grabs various PHP files and serves them with the page requested located in /pages/    |
 | /scripts.php | Contains scripts that are loaded per the *entire* website.                                          |
   
-For the website, we use a combination of CSS3, HTML5, and JS.  In every case possible, avoid Adobe Flash and any other non-W3C valid plugins.  Our aim is W3C standard compatiblity - this will in almost every single case work exactly right with modern Chrome, Firefox, IE.  Old IE does not work well - do NOT hack up the site to get support - inform the user that they're using an old browser and that it will not display correctly unless they update - CEDC has standards and unfortunately IE6 doesn't meet them.
+For the website, we use a combination of CSS3, HTML5, and JS.  In every case possible, avoid Adobe Flash and any other non-W3C valid plugins.  Our aim is W3C standard compatiblity in HTML5 - this will in almost every single case work exactly right with modern Chrome, Firefox, IE.  We still maintain compatiblity with IE8 (to the extent to NOT interfere with the W3C standards), the last version of the browser for Windows XP and in low-resolution (1024x768 targeted) environments, although these platforms are not our main targets.
   
 Resources:  
   
