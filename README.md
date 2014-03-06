@@ -3,8 +3,9 @@ cedc
   
 Clemson Engineers for Developing Countries Website  
   
-Congratulations!  If you're viewing this you're a web developer for CEDC.  
-This hub contains the most up-to-date code from all of the developers in CEDC.  
+This hub contains the most up-to-date code from all of the developers in CEDC for the organizational website.
+
+Currently, this isn't the live site but the version in production.
   
 ====  
   
@@ -37,4 +38,4 @@ Resources:
 | http://www.w3.org/       | Contains web standards, as well as resources on web development      |
 | http://getbootstrap.com/ | Contains Bootstrap, the web framework we use.  GREAT documentation.  |
   
-If you have any questions on the website, feel free to email me at sestickl@gmail.com.
+If you have any questions on the website, feel free to contact user sstickl.
