@@ -13,7 +13,7 @@
 
 	width: 100%;
 	padding: 25px 0px 25px 0px;
-	color: #fff;
+	color: #000;
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	font-size: 15px;
 	text-align: center;
@@ -28,16 +28,6 @@
 
 #header img{	/*	Styling of logo	*/
 	margin: 0px 30px 0px 30px;
-}
-
-#header-collapse{	/*	Styling of compressed header	*/
-	/*position: fixed;
-	top: 0px;*/
-	width: 100%;
-	display: none;
-	padding: 10px 0px 10px 0px;
-	max-height: 50px;
-	z-index: 100;
 }
 
 /*	Navbar Styling	*/
