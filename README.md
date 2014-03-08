@@ -17,7 +17,6 @@ Basic structure:
 | ------------ |:---------------------------------------------------------------------------------------------------:|
 | /css/        | Contains the Cascading Style Sheet files                                                            |
 | /img/        | Contains image files                                                                                |
-| /js/         | Contains Javascript files (none atm                                                                 |
 | /pages/      | Contains the actual pages of the website                                                            |
 | /footer.php  | Footer information for website                                                                      |
 | /header.php  | Head info, logo, links                                                                              |
