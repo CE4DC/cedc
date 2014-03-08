@@ -7,8 +7,8 @@
 ?>
     
 	<!--Set up the middle of the page-->
-    <div class="content">
-		<div class="container">
+    <div id="content">
+		<div class="container" style="border-top-left-radius: 5px;">
 			<?php
 				include( 'pages/' . $page . ".html" );
 			?>
