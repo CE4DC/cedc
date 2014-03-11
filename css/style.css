@@ -7,104 +7,206 @@
 
 /*	Header Styling	*/
 
-#header{	/*	General uncompressed header styling	*/
-	width: 100%;
-	font-size: 15px;
-	text-align: center;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	overflow: hidden;
-}
-
-#header-text{	/*	Styling of text next to logo	*/
-	display: inline-block;
-	width: 1100px;
-}
-
-#logo{
-	width: 100px;
-}
-
-/*	Navbar Styling	*/
-
-#nav{	/*	General navbar styling	*/
-	background-color: #474747;
-	padding: 10px 0px 10px 0px;
-	color: #ffffff;
-	font-size: 12px;
-	font-weight: 500;
-	letter-spacing: 1px;
-	height: 39px;
-	width: 1100px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
-
-#nav-list{	/*	Make those pesky dots not show up	*/
-	list-style: none;
-}
-
-#nav-list li{
-	display: inline;
-	margin: 0px;
-}
-
-#nav-list a{	/*	Link colors	*/
-	text-decoration: none;
-	margin-left: 7px;
-	margin-right: 7px;
-	color: #222;
-	text-shadow: 0px 2px 3px #555;
-}
-
-#nav-list a:active{	/*	Link colors	*/
-	color: #ffffff;
-}
-
-#nav-list a:visited{	/*	Link colors	*/
-	color: #222;
-}
-
-#nav-list a:hover{	/*	Link colors	*/
-	color: #ffffff;		
-}
-
-
-/*	Body Styling	*/
-
-body{
-	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#content{	/*	First div qualities	*/
+#wrapper {
+	min-height: 100%;
+	position: relative;
 	background-color: #fff;
-	z-index: 0;
+	background: linear-gradient(90deg, rgb(204,204,204), rgb(255, 255, 255) , rgb(204,204,204));
 	color: #000;
 }
 
-.container{
-	background-color: #C0C0C0;
-	padding: 15px;
+#header-bg {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	background-image: url('../img/header.png');
+	background-repeat: repeat-x;
+	height: 160px;
+}
+
+#header {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+#header-motto{	/*	Styling of text next to logo	*/
+	position: absolute;
+	top: 120px;
+	left: 200px;
+	width: 760px;
+	height: 40px;
+	display: inline;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+#header-logo {	/*	Styling of logo	*/
+	position: absolute;
+	width: 224px;
+	left: -12px;
+}
+
+#header-nav {
+	position: absolute;
+	margin-top: 20px;
+	left: 200px;
+	width: 760px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+}
+
+#header-nav ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+#header-nav li {
+	display:inline-block;
+	padding: 0px;
+	margin-left: 8px;
+	height: 80px;
+}
+
+#header-nav a {
+	display: table;
+	position: relative;
+	left: -10px;
+	padding-left: 10px;
+	height: 80px;
+	text-decoration: none;
+	color: #333;
+}
+
+#header-nav p {
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center;
+}
+
+#header-nav a:active {	/*	Link colors	*/
+	color: #fff;
+}
+
+#header-nav a:visited {	/*	Link colors	*/
+	color: #333;
+}
+
+#header-nav li:hover {	/*	Link colors	*/
+	background-image: url('../img/press_right.png');
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+#header-nav li:hover > a {	/*	Link colors	*/
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-image: url('../img/press_left.png');
+}
+
+/*	Body Styling	*/
+
+html,
+body {	/*	Remove the padding on the page	*/
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+}
+
+#content {
+	padding-top: 160px;
+	padding-bottom: 240px;
+	width: 960px;
+	margin: 0 auto;
+}
+
+#content-body {
+	padding: 20px;
 }
 
 /*	Footer Styling	*/
 
-#footer{	/*	General footer styling	*/
+#footer-bg {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	background-image: url('../img/footer.png');
+	background-repeat: repeat-x;
+	height: 240px;
+}
+
+#footer {	/*	General footer styling	*/
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	height: 240px;
+}
+
+#footer-content {
+	padding: 20px 25px 20px 25px;
+	color: #fff;
+	text-align: center;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+#footer-social {
+	text-align: right;
+}
+
+#footer-nav {
+	position: relative;
+	top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#footer-copy {
+	position: absolute;
+	height: 10px;
+	margin-bottom: 16px;
+	bottom: 16px;
+	width: 912px;
 	text-align: right;
 	font-size: 10px;
-	background-color: #474747;
-	padding: 15px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+	line-height: 10px;
 }
 
-/*	General Styling	*/
-.left{
-	float: left;
+#footer-nav ul {	/*	Make those pesky dots not show up	*/
+	list-style: none;
 }
 
-.right{
-	float: right;
+#footer-nav li {
+	display: inline;
+	margin: 0px;
+}
+
+#footer-nav a {	/*	Link colors	*/
+	text-decoration: none;
+	margin-left: 7px;
+	margin-right: 7px;
+	color: #fff;
+}
+
+#footer-nav a:active{	/*	Link colors	*/
+	color: #333;
+}
+
+#footer-nav a:visited{	/*	Link colors	*/
+	color: #fff;
+}
+
+#footer-nav a:hover{	/*	Link colors	*/
+	color: #333;		
 }
