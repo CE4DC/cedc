@@ -59,9 +59,9 @@
 	margin-top: 20px;
 	left: 200px;
 	width: 760px;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: bold;
-	font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+	font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif; font-stretch: condensed;
 }
 
 #header-nav ul {
@@ -81,10 +81,10 @@
 	display: table;
 	position: relative;
 	left: -10px;
-	padding-left: 10px;
+	padding-left: 9px;
 	height: 80px;
 	text-decoration: none;
-	color: #333;
+	color: #fff;
 }
 
 #header-nav p {
@@ -94,11 +94,11 @@
 }
 
 #header-nav a:active {	/*	Link colors	*/
-	color: #fff;
+	color: #ff8300;
 }
 
 #header-nav a:visited {	/*	Link colors	*/
-	color: #333;
+	color: #fff;
 }
 
 #header-nav li:hover {	/*	Link colors	*/
@@ -108,7 +108,7 @@
 }
 
 #header-nav li:hover > a {	/*	Link colors	*/
-	color: #fff;
+	color: #ff8300;
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-image: url('../img/press_left.png');
@@ -123,7 +123,7 @@ body {	/*	Remove the padding on the page	*/
 	height: 100%;
 }
 
-#content {
+#content-wrapper {
 	padding-top: 160px;
 	padding-bottom: 240px;
 	width: 960px;
@@ -162,6 +162,22 @@ body {	/*	Remove the padding on the page	*/
 
 #footer-social {
 	text-align: right;
+   text-decoration: none;
+}
+
+.footer-social-button {
+   display: inline-block;
+   height: 64px;
+   width: 64px;
+   overflow: hidden;
+}
+
+.footer-social-button img {
+   border: 0;
+}
+
+.footer-social-button img:hover {
+   margin-left: -64px;
 }
 
 #footer-nav {
@@ -200,7 +216,7 @@ body {	/*	Remove the padding on the page	*/
 }
 
 #footer-nav a:active{	/*	Link colors	*/
-	color: #333;
+	color: #393939;
 }
 
 #footer-nav a:visited{	/*	Link colors	*/
@@ -208,5 +224,5 @@ body {	/*	Remove the padding on the page	*/
 }
 
 #footer-nav a:hover{	/*	Link colors	*/
-	color: #333;		
+	color: #393939;		
 }

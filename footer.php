@@ -3,12 +3,10 @@
 	<div id="footer">
     <div id="footer-content">
         <div id="footer-social">
-        	<a href="https://sites.google.com/a/g.clemson.edu/cedc/?pli=1">
-            	<span style="float: left"><img src="img/tools.png" alt="Tools"/></span>
+            <a href="https://sites.google.com/a/g.clemson.edu/cedc/?pli=1">
+            	<span style="float: left" class="footer-social-button"><img src="img/tools.png" alt="CEDC Member Tools"/></span>
             </a>
-            <a href="https://www.facebook.com/cedc09"><img src="img/fb.png" alt="Facebook"/></a>
-            <a href="https://twitter.com/CU_CEDC"><img src="img/tw.png" alt="Twitter"/></a>
-            <a href="http://www.linkedin.com/groups/Clemson-Engineers-Developing-Countries-4637840"><img src="img/in.png" alt="Linkedin"/></a>
+            <a href="https://www.facebook.com/cedc09"><span class="footer-social-button"><img src="img/fb.png" alt="Facebook"/></span></a>&nbsp;<a href="https://twitter.com/CU_CEDC"><span class="footer-social-button"><img src="img/tw.png" alt="Twitter"/></span></a>&nbsp;<a href="http://www.linkedin.com/groups/Clemson-Engineers-Developing-Countries-4637840"><span class="footer-social-button"><img src="img/in.png" alt="Linkedin"/></span></a>
         </div>
         <div id="footer-nav">
             <ul>

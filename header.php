@@ -31,4 +31,4 @@
         </div>
 	</div>
 </div>
-<div id="content"><div id="content-body">
+<div id="content-wrapper"><div id="content-body">
