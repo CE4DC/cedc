@@ -19,13 +19,11 @@
         <div id="header-nav">
         	<ul>
                 <li><a href="page.php?page=index&amp;name=Home"><p>Home</p></a></li>
-                <li><a href="page.php?page=about&amp;name=About%20Us"><p>About<br>Us</p></a></li>
+                <li><a href="page.php?page=about&amp;name=About%20Us"><p>About Us</p></a></li>
                 <li><a href="page.php?page=projects&amp;name=Projects"><p>Projects</p></a></li>
-                <li><a href="page.php?page=classroom&amp;name=In%20the%20Classroom"><p>In The<br>Classroom</p></a></li>
-                <li><a href="page.php?page=intern&amp;name=Our%20Interns"><p>Intern<br>Program</p></a></li>
-                <li><a href="page.php?page=trips&amp;name=Our%20Trips"><p>Trips</p></a></li>
-                <li><a href="page.php?page=calendar&amp;name=Calendar"><p>Calendar</p></a></li>
-                <li><a href="page.php?page=contact&amp;name=Contact%20Us"><p>Contact</p></a></li>
+                <li><a href="page.php?page=classroom&amp;name=In%20the%20Classroom"><p>In the Classroom</p></a></li>
+                <li><a href="page.php?page=intern&amp;name=Our%20Interns"><p>In the Field</p></a></li>
+                <li><a href="page.php?page=contact&amp;name=Contact%20Us"><p>Contact Us</p></a></li>
                 <li><a href="page.php?page=gallery&amp;name=Gallery"><p>Gallery</p></a></li>
             </ul>
         </div>

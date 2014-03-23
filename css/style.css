@@ -124,7 +124,7 @@ body {	/*	Remove the padding on the page	*/
 }
 
 #content-wrapper {
-	padding-top: 160px;
+	padding-top: 200px;
 	padding-bottom: 240px;
 	width: 960px;
 	margin: 0 auto;
@@ -225,4 +225,10 @@ body {	/*	Remove the padding on the page	*/
 
 #footer-nav a:hover{	/*	Link colors	*/
 	color: #393939;		
+}
+
+/*	General Styling	*/
+ul{
+	list-style-position: inside;
+	list-style-type: circle;
 }
