@@ -26,10 +26,10 @@ Basic structure:
 Structure in /img/:
 | File/Folder  | Description                                                                                         |
 | ------------ |:---------------------------------------------------------------------------------------------------:|
-| /partners/   | Partners of CEDC.  Used on the about us page.														 |
+| /partners/   | Partners of CEDC.  Used on the about us page.														                           |
 | /projects/   | Pictures of our projects used on the website but NOT in galleries.  Ex: grid on projects page       |
-| /ps/		   | Page specific images.  Ex: about us page images at the top											 |
-| /trips/	   | Pictures of the trips we've taken in CEDC.															 | 
+| /ps/         | Page specific images.  Ex: about us page images at the top								                    			 |
+| /trips/	     | Pictures of the trips we've taken in CEDC.													                             		 | 
   
 For the website, we use a combination of CSS3, HTML5, and JS.  In every case possible, avoid Adobe Flash and any other non-W3C valid plugins.  Our aim is W3C standard compatiblity in HTML5 - this will in almost every single case work exactly right with modern Chrome, Firefox, IE.  We still aim to maintain compatibility with the older IE versions through custom CSS, though not at the expense of standards.
 
