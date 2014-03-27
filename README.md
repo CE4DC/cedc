@@ -5,7 +5,7 @@ Clemson Engineers for Developing Countries Website
   
 This hub contains the most up-to-date code from all of the developers in CEDC for the organizational website.
 
-Currently, this isn't the live site but the version in production.
+If committing, make sure to include references to any relevant issues you are working on and a *descriptive* title and description for your commit.  Break up your commit if working on multiple issues at once, try to use a commit per issue/change if possible.
   
 ====  
   
@@ -22,10 +22,18 @@ Basic structure:
 | /header.php  | Head info, logo, links                                                                              |
 | /index.php   | Index page (REDIRECTS TO page.php?page=index.php)                                                   |
 | /page.php    | PHP file that grabs various PHP files and serves them with the page requested located in /pages/    |
-  
-For the website, we use a combination of CSS3, HTML5, and JS.  In every case possible, avoid Adobe Flash and any other non-W3C valid plugins.  Our aim is W3C standard compatiblity in HTML5 - this will in almost every single case work exactly right with modern Chrome, Firefox, IE.  We still aim to maintain compatibility with the older IE versions through custom CSS, however.
 
-Current styling widths: 1200px
+Structure in /img/:
+| File/Folder  | Description                                                                                         |
+| ------------ |:---------------------------------------------------------------------------------------------------:|
+| /partners/   | Partners of CEDC.  Used on the about us page.														 |
+| /projects/   | Pictures of our projects used on the website but NOT in galleries.  Ex: grid on projects page       |
+| /ps/		   | Page specific images.  Ex: about us page images at the top											 |
+| /trips/	   | Pictures of the trips we've taken in CEDC.															 | 
+  
+For the website, we use a combination of CSS3, HTML5, and JS.  In every case possible, avoid Adobe Flash and any other non-W3C valid plugins.  Our aim is W3C standard compatiblity in HTML5 - this will in almost every single case work exactly right with modern Chrome, Firefox, IE.  We still aim to maintain compatibility with the older IE versions through custom CSS, though not at the expense of standards.
+
+Current styling width(s): 960px
   
 Resources:  
   
