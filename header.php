@@ -22,7 +22,7 @@
                 <li><a href="page.php?page=about&amp;name=About%20Us"><p>About Us</p></a></li>
                 <li><a href="page.php?page=projects&amp;name=Projects"><p>Projects</p></a></li>
                 <li><a href="page.php?page=classroom&amp;name=In%20the%20Classroom"><p>In the Classroom</p></a></li>
-                <li><a href="page.php?page=intern&amp;name=Our%20Interns"><p>In the Field</p></a></li>
+                <li><a href="page.php?page=intern&amp;name=In%20the%20Field"><p>In the Field</p></a></li>
                 <li><a href="page.php?page=contact&amp;name=Contact%20Us"><p>Contact Us</p></a></li>
                 <li><a href="page.php?page=gallery&amp;name=Gallery"><p>Gallery</p></a></li>
             </ul>
