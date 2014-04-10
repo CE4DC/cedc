@@ -5,6 +5,36 @@
 	Description:	This is the CSS pertaining to the entire site.
 */
 
+/*	Organizational Styling	*/
+@font-face {
+ font-family: 'Gothamy';
+ src: local('Gotham Book'), local('Gotham-Book');
+ font-weight: normal;
+ font-style: normal;
+ font-variant: normal;
+}
+@font-face {
+ font-family: 'Gothamy';
+ src: local('Gotham Bold'), local('Gotham-Bold');
+ font-weight: bold;
+ font-style: normal;
+ font-variant: normal;
+}
+@font-face {
+ font-family: 'Gothamy';
+ src: local('Gotham Book Italic'), local('Gotham-BookItalic');
+ font-weight: normal;
+ font-style: italic;
+ font-variant: normal;
+}
+@font-face {
+ font-family: 'Gothamy';
+ src: local('Gotham Bold Italic'), local('Gotham-BoldItalic');
+ font-weight: bold;
+ font-style: italic;
+ font-variant: normal;
+}
+
 /*	Header Styling	*/
 
 #wrapper {
@@ -45,7 +75,7 @@
 	font-size: 14px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
 }
 
 #header-logo {	/*	Styling of logo	*/
@@ -59,9 +89,9 @@
 	margin-top: 20px;
 	left: 200px;
 	width: 760px;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: bold;
-	font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif; font-stretch: condensed;
+	font-family: Gothamy, Gotham-Book, Arial, sans-serif;	
 }
 
 #header-nav ul {
@@ -121,6 +151,7 @@ body {	/*	Remove the padding on the page	*/
 	padding: 0px;
 	margin: 0px;
 	height: 100%;
+	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
 }
 
 #content-wrapper {
@@ -157,7 +188,7 @@ body {	/*	Remove the padding on the page	*/
 	padding: 20px 25px 20px 25px;
 	color: #fff;
 	text-align: center;
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
 }
 
 #footer-social {
