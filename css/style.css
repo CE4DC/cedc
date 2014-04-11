@@ -35,13 +35,17 @@
  font-variant: normal;
 }
 
+/*EA6A20 = Clemson Orange
+86898C = Innovation
+3A4958 = Blue Ridge
+FFFFFF = Fort Hill	*/
+
 /*	Header Styling	*/
 
 #wrapper {
 	min-height: 100%;
 	position: relative;
-	background-color: #fff;
-	background: linear-gradient(90deg, rgb(204,204,204), rgb(255, 255, 255) , rgb(204,204,204));
+	background-color: #FFFFFF;
 	color: #000;
 }
 
