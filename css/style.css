@@ -40,8 +40,7 @@
 #wrapper {
 	min-height: 100%;
 	position: relative;
-	background-color: #fff;
-	background: linear-gradient(90deg, rgb(204,204,204), rgb(255, 255, 255) , rgb(204,204,204));
+	background-color: #FFFFFF;
 	color: #000;
 }
 
@@ -114,7 +113,7 @@
 	padding-left: 9px;
 	height: 80px;
 	text-decoration: none;
-	color: #fff;
+	color: #3A4958;
 }
 
 #header-nav p {
@@ -124,11 +123,11 @@
 }
 
 #header-nav a:active {	/*	Link colors	*/
-	color: #ff8300;
+	color: #86898C;
 }
 
 #header-nav a:visited {	/*	Link colors	*/
-	color: #fff;
+	color: #3A4958;
 }
 
 #header-nav li:hover {	/*	Link colors	*/
@@ -138,7 +137,7 @@
 }
 
 #header-nav li:hover > a {	/*	Link colors	*/
-	color: #ff8300;
+	color: #86898C;
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-image: url('../img/press_left.png');
@@ -247,7 +246,7 @@ body {	/*	Remove the padding on the page	*/
 }
 
 #footer-nav a:active{	/*	Link colors	*/
-	color: #393939;
+	color: #86898C;
 }
 
 #footer-nav a:visited{	/*	Link colors	*/
@@ -255,7 +254,7 @@ body {	/*	Remove the padding on the page	*/
 }
 
 #footer-nav a:hover{	/*	Link colors	*/
-	color: #393939;		
+	color: #86898C;		
 }
 
 /*	General Styling	*/
