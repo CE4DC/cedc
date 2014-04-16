@@ -118,7 +118,7 @@ FFFFFF = Fort Hill	*/
 	padding-left: 9px;
 	height: 80px;
 	text-decoration: none;
-	color: #fff;
+	color: #3A4958;
 }
 
 #header-nav p {
@@ -128,11 +128,11 @@ FFFFFF = Fort Hill	*/
 }
 
 #header-nav a:active {	/*	Link colors	*/
-	color: #ff8300;
+	color: #86898C;
 }
 
 #header-nav a:visited {	/*	Link colors	*/
-	color: #fff;
+	color: #3A4958;
 }
 
 #header-nav li:hover {	/*	Link colors	*/
@@ -142,7 +142,7 @@ FFFFFF = Fort Hill	*/
 }
 
 #header-nav li:hover > a {	/*	Link colors	*/
-	color: #ff8300;
+	color: #86898C;
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-image: url('../img/press_left.png');
@@ -251,7 +251,7 @@ body {	/*	Remove the padding on the page	*/
 }
 
 #footer-nav a:active{	/*	Link colors	*/
-	color: #393939;
+	color: #86898C;
 }
 
 #footer-nav a:visited{	/*	Link colors	*/
@@ -259,7 +259,7 @@ body {	/*	Remove the padding on the page	*/
 }
 
 #footer-nav a:hover{	/*	Link colors	*/
-	color: #393939;		
+	color: #86898C;		
 }
 
 /*	General Styling	*/
