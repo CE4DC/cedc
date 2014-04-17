@@ -5,41 +5,6 @@
 	Description:	This is the CSS pertaining to the entire site.
 */
 
-/*	Organizational Styling	*/
-@font-face {
- font-family: 'Gothamy';
- src: local('Gotham Book'), local('Gotham-Book');
- font-weight: normal;
- font-style: normal;
- font-variant: normal;
-}
-@font-face {
- font-family: 'Gothamy';
- src: local('Gotham Bold'), local('Gotham-Bold');
- font-weight: bold;
- font-style: normal;
- font-variant: normal;
-}
-@font-face {
- font-family: 'Gothamy';
- src: local('Gotham Book Italic'), local('Gotham-BookItalic');
- font-weight: normal;
- font-style: italic;
- font-variant: normal;
-}
-@font-face {
- font-family: 'Gothamy';
- src: local('Gotham Bold Italic'), local('Gotham-BoldItalic');
- font-weight: bold;
- font-style: italic;
- font-variant: normal;
-}
-
-/*EA6A20 = Clemson Orange
-86898C = Innovation
-3A4958 = Blue Ridge
-FFFFFF = Fort Hill	*/
-
 /*	Header Styling	*/
 
 #wrapper {
@@ -55,8 +20,7 @@ FFFFFF = Fort Hill	*/
 	top: 0px;
 	left: 0px;
 	text-align: center;
-	background-image: url('../img/header.png');
-	background-repeat: repeat-x;
+	background-color: #FFFFFF;
 	height: 160px;
 }
 
@@ -64,109 +28,226 @@ FFFFFF = Fort Hill	*/
 	position: relative;
 	width: 960px;
 	margin: 0 auto;
-	color: #fff;
 }
 
-#header-motto{	/*	Styling of text next to logo	*/
+#header-motto {
 	position: absolute;
-	top: 120px;
-	left: 200px;
-	width: 760px;
-	height: 40px;
-	display: inline;
+	top: 64px;
+	left: 340px;
+	text-align: left;
+	font-size: 16px;
+	font-family: "Century Gothic", "Helvetica Neue", "Lucida Grande", "Lucida Sans Unicode", arial, sans-serif;
+}
+
+#header-logo {
+	position: absolute;
+   text-decoration: none;
+	top: 14px;
+	left: 0px;
+}
+
+#header-logo img {
+   border: 0;
+}
+
+#header-nav-bg {
+   position: absolute;
+	width: 100%;
+	top: 128px;
+	left: 0px;
 	text-align: center;
-	line-height: 40px;
-	font-size: 14px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
-}
-
-#header-logo {	/*	Styling of logo	*/
-	position: absolute;
-	width: 224px;
-	left: -12px;
+	height: 32px;
+   background-color: #3A4958;
 }
 
 #header-nav {
-	position: absolute;
-	margin-top: 20px;
-	left: 200px;
-	width: 760px;
+	height: 32px;
+	display: inline;
 	font-size: 16px;
+	line-height: 32px;
 	font-weight: bold;
-	font-family: Gothamy, Gotham-Book, Arial, sans-serif;	
+	text-transform: uppercase;
+	font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif;
 }
 
 #header-nav ul {
-	margin: 0 auto;
+   display: table;
+   width: 960px;
 	padding: 0;
+	margin: 0 auto;
 	list-style: none;
 }
 
 #header-nav li {
-	display:inline-block;
-	padding: 0px;
-	margin-left: 8px;
-	height: 80px;
+   vertical-align: top;
+	display: table-cell;
+	padding: 0 20px;
 }
 
 #header-nav a {
-	display: table;
-	position: relative;
-	left: -10px;
-	padding-left: 9px;
-	height: 80px;
 	text-decoration: none;
-	color: #fff;
+   color: #86898C;
 }
 
-#header-nav p {
-	display: table-cell; 
-	vertical-align: middle; 
+.header-nav-pointer {
+   position: relative;
+   margin: 0 auto;
+	width: 0; 
+	height: 0; 
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #EA6A20;
+   z-index: 2;
+}
+
+#header-nav img {
 	text-align: center;
+   font-weight: normal;
+   position: relative;
+   width: 960px;
+   margin: 0 auto;
 }
 
-#header-nav a:active {	/*	Link colors	*/
-	color: #ff8300;
+.header-nav-img {
+   position: absolute;
+   visibility: hidden;
+   overflow: hidden;
+   min-width: 960px;
+   width: 100%;
+   height: 120px;
+   left: 0px;
+   z-index: 1;
 }
 
-#header-nav a:visited {	/*	Link colors	*/
-	color: #fff;
+#header-nav a:hover ~ .header-nav-img {
+   visibility: visible;
 }
 
-#header-nav li:hover {	/*	Link colors	*/
-	background-image: url('../img/press_right.png');
-	background-repeat: no-repeat;
-	background-position: right top;
+#header-nav a:active {
+	color: #FFFFFF;
 }
 
-#header-nav li:hover > a {	/*	Link colors	*/
-	color: #ff8300;
-	background-repeat: no-repeat;
-	background-position: left top;
-	background-image: url('../img/press_left.png');
+#header-nav a:visited {
+	color: #86898C;
+}
+
+#header-nav a:hover {
+	color: #FFFFFF;
+}
+
+#header-nav a:hover ~ .header-nav-pointer {
+   top: 8px;
+}
+
+#header-nav-sep {
+   position: absolute;
+	width: 100%;
+	top: 32px;
+	left: 0px;
+	height: 8px;
+   background-color: #EA6A20;
 }
 
 /*	Body Styling	*/
 
 html,
-body {	/*	Remove the padding on the page	*/
+body {
 	padding: 0px;
 	margin: 0px;
 	height: 100%;
-	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
 }
 
 #content-wrapper {
-	padding-top: 200px;
-	padding-bottom: 240px;
+	padding-top: 280px;
+	padding-bottom: 180px;
 	width: 960px;
 	margin: 0 auto;
 }
 
 #content-body {
 	padding: 20px;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 200%;
+   color: #222222;
+   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Trebuchet MS", Tahoma, sans-serif;
+}
+
+#content-body h1 {
+	font-size: 24px;
+   font-weight: normal;
+   color: #EA6A20;
+	font-family: "Century Gothic", "Helvetica Neue", "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+#content-body h2 {
+	font-size: 21px;
+   font-weight: normal;
+   color: #222222;
+	font-family: "Century Gothic", "Helvetica Neue", "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+#content-body h3 {
+	font-size: 18px;
+   font-weight: normal;
+   color: #222222;
+	font-family: "Century Gothic", "Helvetica Neue", "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+.line-separator {
+   height: 1px;
+   background-color: #86898C;
+}
+
+.body-container {
+   width: 640px;
+}
+
+.side-nav {
+	position: relative;
+	top: 36px;
+	float: right;
+	list-style: none;
+   line-height: 24px;
+   padding: 0;
+}
+
+.side-nav-selector {
+   float: right;
+   margin-top: 4px;
+	width: 0; 
+	height: 0; 
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right: 8px solid #EA6A20;
+}
+
+.side-nav li {
+	margin: 8px 0;
+	font-size: 16px;
+   font-weight: normal;
+   text-align: right;
+   color: #222222;
+	font-family: "Century Gothic", "Helvetica Neue", "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+.side-nav a {
+	text-decoration: none;
+	color: #222222;
+   margin-right: 16px;
+}
+
+.side-nav a:active {
+	color: #222222;
+}
+
+.side-nav a:visited {
+	color: #222222;
+}
+
+.side-nav a:hover {
+	color: #222222;
+   text-decoration:underline; 
 }
 
 /*	Footer Styling	*/
@@ -176,66 +257,85 @@ body {	/*	Remove the padding on the page	*/
 	width: 100%;
 	bottom: 0px;
 	left: 0px;
-	background-image: url('../img/footer.png');
+	background-color: #3A4958;
 	background-repeat: repeat-x;
-	height: 240px;
+	height: 180px;
 }
 
-#footer {	/*	General footer styling	*/
+#footer {
 	position: relative;
 	width: 960px;
 	margin: 0 auto;
-	height: 240px;
+	height: 180px;
 }
 
 #footer-content {
-	padding: 20px 25px 20px 25px;
-	color: #fff;
-	text-align: center;
-	font-family: Gothamy, Gotham-Book, Arial, sans-serif;
+	padding: 16px;
+	color: #86898C;
+	font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif;
 }
 
 #footer-social {
-	text-align: right;
+	text-align: left;
    text-decoration: none;
 }
 
-.footer-social-button {
-   display: inline-block;
-   height: 64px;
-   width: 64px;
-   overflow: hidden;
+#footer-social-tools-wrap:hover > #footer-social-tools {
+   background-position: -56px 0px;
 }
 
-.footer-social-button img {
+#footer-social-tools-wrap:hover > p {
+   color: #FFFFFF;
+}
+
+#footer-social-tools {
+   float: left;
+   display: inline-block;
+   height: 56px;
+   width: 56px;
+   overflow: hidden;
+   margin-right: 8px;
+   background-image: url('../img/cedctools.png')
+}
+
+#footer-social p {
+   float: left;
+   display: table-cell;
+   height: 56px;
+   color: #86898C;
+}
+
+.footer-social-button {
+   float: right;
+   display: inline-block;
+   height: 56px;
+   width: 56px;
+   overflow: hidden;
+   margin-left: 8px;
+}
+
+#footer-social img:hover {
+   margin-left: -56px;
+}
+
+#footer-social img {
    border: 0;
 }
 
-.footer-social-button img:hover {
-   margin-left: -64px;
-}
-
 #footer-nav {
-	position: relative;
-	top: 10px;
-	font-size: 20px;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-#footer-copy {
 	position: absolute;
-	height: 10px;
-	margin-bottom: 16px;
-	bottom: 16px;
-	width: 912px;
-	text-align: right;
-	font-size: 10px;
-	line-height: 10px;
+	top: 98px;
+	width: 928px;
+   padding: 0;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
 }
 
-#footer-nav ul {	/*	Make those pesky dots not show up	*/
+#footer-nav ul {
 	list-style: none;
+   margin: 0;
+   padding: 0;
 }
 
 #footer-nav li {
@@ -243,27 +343,31 @@ body {	/*	Remove the padding on the page	*/
 	margin: 0px;
 }
 
-#footer-nav a {	/*	Link colors	*/
+#footer-nav a {
 	text-decoration: none;
-	margin-left: 7px;
-	margin-right: 7px;
-	color: #fff;
+	margin: 0 5px;
+	color: #86898C;
 }
 
-#footer-nav a:active{	/*	Link colors	*/
-	color: #393939;
+#footer-nav a:active {
+	color: #FFFFFF;
 }
 
-#footer-nav a:visited{	/*	Link colors	*/
-	color: #fff;
+#footer-nav a:visited {
+	color: #86898C;
 }
 
-#footer-nav a:hover{	/*	Link colors	*/
-	color: #393939;		
+#footer-nav a:hover {
+	color: #FFFFFF;		
 }
 
-/*	General Styling	*/
-ul{
-	list-style-position: inside;
-	list-style-type: circle;
+#footer-copy {
+	position: absolute;
+	height: 10px;
+	margin-bottom: 16px;
+	bottom: 16px;
+	width: 928px;
+	text-align: right;
+	font-size: 10px;
+	line-height: 10px;
 }
