@@ -86,6 +86,7 @@
 
 #header-nav a {
 	text-decoration: none;
+<<<<<<< HEAD
    color: #86898C;
 }
 
@@ -98,6 +99,9 @@
 	border-right: 8px solid transparent;
 	border-top: 8px solid #EA6A20;
    z-index: 2;
+=======
+	color: #3A4958;
+>>>>>>> master
 }
 
 #header-nav img {
@@ -119,18 +123,28 @@
    z-index: 1;
 }
 
+<<<<<<< HEAD
 #header-nav a:hover ~ .header-nav-img {
    visibility: visible;
 }
 
 #header-nav a:active {
 	color: #FFFFFF;
+=======
+#header-nav a:active {	/*	Link colors	*/
+	color: #86898C;
+}
+
+#header-nav a:visited {	/*	Link colors	*/
+	color: #3A4958;
+>>>>>>> master
 }
 
 #header-nav a:visited {
 	color: #86898C;
 }
 
+<<<<<<< HEAD
 #header-nav a:hover {
 	color: #FFFFFF;
 }
@@ -146,6 +160,13 @@
 	left: 0px;
 	height: 8px;
    background-color: #EA6A20;
+=======
+#header-nav li:hover > a {	/*	Link colors	*/
+	color: #86898C;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-image: url('../img/press_left.png');
+>>>>>>> master
 }
 
 /*	Body Styling	*/
@@ -371,3 +392,10 @@ body {
 	font-size: 10px;
 	line-height: 10px;
 }
+
+/*	General Styling	*/
+ul{
+	list-style-position: inside;
+	list-style-type: circle;
+}
+

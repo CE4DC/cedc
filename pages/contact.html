@@ -1,17 +1,118 @@
+<?php
+require( 'functions.php' );
+function isValidEmail($email) {
+  $result = TRUE;
+  if(!@eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$", $email)) {
+    $result = FALSE;
+  }
+  return $result;
+}
+
+$CEDCEMAIL = 'cedc@clemson.edu'; //email to send mail to
+
+//Variables to remember user input
+$formMsg = '';
+$formName = '';
+$formEmail = '';
+$formSubject = '';
+
+//Error tracking
+$error = new Error;
+$error->setFooter("");
+$error->setHeader("<b>Email not sent</b>");
+
+//Bool for deciding what page to display
+$SENT = false;
+if(isset($_POST['submit'])) //If post data
+{
+	//Get the post data
+	$name = trim($_POST['u_name']);
+	$email = trim($_POST['u_email']);
+	$subject = trim($_POST['u_subject']);
+	$message = trim($_POST['u_message']);
+	$securityString = $_POST['u_security'];
+	$securityAnswer = $_POST['u_security_answer'];
+	
+	//Error check
+	if(strlen($name)<3)
+	{
+		$error->add("Your name was too short. <br/>");
+	}
+	if(strlen($email)<3 or !isValidEmail($email))
+	{	
+		$error->add("An invalid email address was entered. <br/>");
+	}
+	if(strlen($subject)<5)
+	{
+		$error->add("The subject was too short. <br/>");
+	}
+	if(strlen($message) < 10)
+	{
+		$error->add("Your message was too short. <br/>");
+	}
+	if(strlen($securityString)!=$securityAnswer)
+	{
+		$error->add("Security check failed.<br/>");
+	}
+	
+	//If everything passed, send the mail
+	if(!$error->hasErrors())
+	{
+		$headers = "From: CEDC Website\r\n";
+		mail($CEDCEMAIL,"Email from CEDC Website: $subject","$name has sent you an email through the CEDC website. The message is enclosed below. \r\n\r\n ----------------------\r\n\r\n".$message."\r\n\r\n----------------------\r\nYou can respond back to $name at $email.",$headers);
+		$SENT = true;
+	}
+	else //Otherwise record the input
+	{
+		$formName = $name;
+		$formMsg = $message;
+		$formEmail = $email;
+		$formSubject = $subject;
+	}
+}
+	
+	
+//Calculate the security key. The user must enter the number of characters displayed
+$secKey = '';
+$max = rand(3,9);
+for($i = 0; $i<$max; $i+=1)
+{
+	$secKey .= chr(rand(65,90));
+}
+?>
+
 <p>Have a suggestion about one of our projects or partners?  Want to volunteer and help out with our projects?  Want to donate money to help fund our projects?  Just want to comment on what we're doing?</p>
 <p>You can fill out the form below or send an email directly to us at cedc@clemson.edu!</p>
 <br/>
 <div>
-<form action='' method='POST'>
-	<table style='width:70%;'>
-		<tr> <td style='text-align:right; width:50%;'> Name: </td> <td> <input style='width:400px;' type='text' name='u_name' value=' '/></td></tr>
-		<tr> <td style='text-align:right;  width:50%;'> Email Address: </td> <td> <input style='width:400px;' type='text' name='u_email' value=''/></td></tr>
-		<tr> <td style='text-align:right;  width:50%;'> Subject: </td> <td> <input style='width:400px;' type='text' name='u_subject' value=' '/></td></tr>
-		<tr> <td valign='top' style='text-align:right;'> Message: </td> <td> <textarea style='width:400px; height: 100px;' name='u_message'></textarea></td></tr>				<tr> <td valign='top' style='text-align: right;'>Security Question:<br/><i>How many letters are there?</i></td>
-		<td> <i>VMSPHDNK</i> <input type='hidden' name='u_security' value='VMSPHDNK'/>  <br/> <input style='width:400px;' type='text' name='u_security_answer' maxlength='1'/></td></tr>
-	</table>
-	<input type='submit' value='Submit email' name='submit'/>
-</form>
+<?php
+	if(!$SENT)
+	{
+		if($error->hasErrors())
+		{
+			echo $error->output();
+		} 
+			
+		echo"
+			<form action='' method='POST'>
+			<table style='width:65%;'>
+				<tr> <td style='text-align:right; width:50%;'> Name: </td> <td> <input style='width:400px;' type='text' name='u_name' value=' $formName'/></td></tr>
+				<tr> <td style='text-align:right;  width:50%;'> Email Address: </td> <td> <input style='width:400px;' type='text' name='u_email' value='$formEmail'/></td></tr>
+				<tr> <td style='text-align:right;  width:50%;'> Subject: </td> <td> <input style='width:400px;' type='text' name='u_subject' value=' $formSubject'/></td></tr>
+				<tr> <td valign='top' style='text-align:right;'> Message: </td> <td> <textarea style='width:400px; height: 100px;' name='u_message'>$formMsg</textarea></td></tr>
+				<tr> <td valign='top' style='text-align: right;'>Security Question:<br/><i>How many letters are there?</i></td>
+					 <td> 
+					 <i>$secKey</i> <input type='hidden' name='u_security' value='$secKey'/>  <br/>
+					 <input style='width:400px;' type='text' name='u_security_answer' maxlength='1'/></td></tr>
+			</table>
+			<input type='submit' value='Submit email' name='submit'/>
+			</form>";
+	}
+	else
+	{
+		echo "Your email was sent!";
+	}
+	?>
 </div>
 
 <p>Please note that all donations should be made payable to:</p>
