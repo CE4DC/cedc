@@ -267,3 +267,19 @@ ul{
 	list-style-position: inside;
 	list-style-type: circle;
 }
+
+table{
+	border-spacing: 5px;
+}
+
+td{
+	padding: 5px;
+}
+
+tr:nth-child(odd) {
+	background-color: #D6D6C2;
+}
+
+tr:nth-child(even) {
+    background-color: #C0C0C0;
+}
