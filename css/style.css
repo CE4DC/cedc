@@ -100,7 +100,7 @@
    z-index: 2;
 }
 
-#header-nav img {
+/*#header-nav img {
 	text-align: center;
    font-weight: normal;
    position: relative;
@@ -121,7 +121,7 @@
 
 #header-nav a:hover ~ .header-nav-img {
    visibility: visible;
-}
+}*/
 
 #header-nav a:active {
 	color: #FFFFFF;
@@ -158,7 +158,7 @@ body {
 }
 
 #content-wrapper {
-	padding-top: 280px;
+	padding-top: 180px;
 	padding-bottom: 180px;
 	width: 960px;
 	margin: 0 auto;
