@@ -24,40 +24,41 @@
             <li>
                <a href="page.php?page=index&amp;name=Home">Home</a>
                <div class="header-nav-pointer"></div>
-               <span class="header-nav-img"><img src="./img/ps/ab1.jpg" alt="Home"/></span>
+               <!--<span class="header-nav-img"><img src="./img/ps/ab1.jpg" alt="Home"/></span>-->
             </li>
             <li>  
                <a href="page.php?page=about&amp;name=About%20Us">About Us</a>
                <div class="header-nav-pointer"></div>
-               <div class="header-nav-img"><img src="./img/ps/ab2.jpg" alt="Home"/></div>
+               <!--<div class="header-nav-img"><img src="./img/ps/ab2.jpg" alt="Home"/></div>-->
             </li>
             <li>
                <a href="page.php?page=projects&amp;name=Projects">Projects</a>
                <div class="header-nav-pointer"></div>
-               <div class="header-nav-img"><img src="./img/ps/ab3.jpg" alt="Home"/></div>
+               <!--<div class="header-nav-img"><img src="./img/ps/ab3.jpg" alt="Home"/></div>-->
             </li>
             <li>
                <a href="page.php?page=classroom&amp;name=In%20the%20Classroom">In the Classroom</a>
                <div class="header-nav-pointer"></div>
-               <div class="header-nav-img"><img src="./img/ps/classroom1.jpg" alt="Home"/></div>
+               <!--<div class="header-nav-img"><img src="./img/ps/classroom1.jpg" alt="Home"/></div>-->
             </li>
             <li>
                <a href="page.php?page=intern&amp;name=In%20the%20Field">In the Field</a>
                <div class="header-nav-pointer"></div>
-               <div class="header-nav-img"><img src="./img/trips/f2011.jpg" alt="Home"/></div>
+               <!--<div class="header-nav-img"><img src="./img/trips/f2011.jpg" alt="Home"/></div>-->
             </li>
             <li>
                <a href="page.php?page=contact&amp;name=Contact%20Us">Contact Us</a>
                <div class="header-nav-pointer"></div>
-               <div class="header-nav-img"><img src="./img/trips/s2012.jpg" alt="Home"/></div>
+               <!--<div class="header-nav-img"><img src="./img/trips/s2012.jpg" alt="Home"/></div>-->
             </li>
             <li>
                <a href="page.php?page=gallery&amp;name=Gallery">Gallery</a>
                <div class="header-nav-pointer"></div>
-               <div class="header-nav-img"><img src="./img/trips/s2013.jpg" alt="Home"/></div>
+               <!--<div class="header-nav-img"><img src="./img/trips/s2013.jpg" alt="Home"/></div>-->
             </li>
          </ul>
-         <div class="header-nav-img" style="visibility: visible; z-index: 0"><img src="./img/ps/ab1.jpg" alt="Home"/></div>
+		<!--To be added-->
+         <!--<div class="header-nav-img" style="visibility: visible; z-index: 0"><img src="./img/ps/ab1.jpg" alt="Home"/></div>-->
       </div>
    </div>
    <div id="content-wrapper">
