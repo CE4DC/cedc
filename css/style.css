@@ -80,7 +80,8 @@
 
 #header-nav li {
    vertical-align: top;
-	display: table-cell;
+	display: inline-table-cell; /* Changed to Inline-table-cell */
+	*display: inline; /* IE7 */
 	padding: 0 20px;
 }
 
