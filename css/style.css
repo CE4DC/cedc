@@ -279,7 +279,7 @@ body {
 }
 
 #footer-content {
-	padding: 16px;
+	padding: 0px; /*changed from 16*/
 	color: #86898C;
 	font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif;
 }
