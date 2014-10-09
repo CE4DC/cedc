@@ -10,19 +10,19 @@ div.tabs > div {
   display: inline}		/* We want the buttons all on one line */
 div.tabs > div > a {
   color: black;			/* Looks more like a button than a link */
-  background: #CCC;		/* Active tabs are light gray */
+  background: #FF4000;		/* Active tabs are light gray */
   padding: 0.2em;		/* Some breathing space */
   border: 0.1em outset #BBB;	/* Make it look like a button */
   border-bottom: 0.1em solid #CCC} /* Visually connect tab and tab body */
 div.tabs > div:not(:target) > a {
   border-bottom: none;		/* Make the bottom border disappear */
-  background: #999}		/* Inactive tabs are dark gray */
+  background: #FF4000}		/* Inactive tabs are dark gray */
 div.tabs > div:target > a,	/* Apply to the targeted item or... */
 :target #default2 > a {		/* ... to the default item */
   border-bottom: 0.1em solid #CCC; /* Visually connect tab and tab body */
-  background: #CCC}		/* Active tab is light gray */
+  background: #380B61}		/* Active tab is light gray */
 div.tabs > div > div {
-  background: #CCC;		/* Light gray */
+  background: #FF4000;		/* Light gray */
   z-index: -2;			/* Behind, because the borders overlap */
   left: 0; top: 1.3em;		/* The top needs some calculation... */
   bottom: 0; right: 0;		/* Other sides flush with containing block */
