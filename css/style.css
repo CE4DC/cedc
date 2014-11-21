@@ -1,11 +1,20 @@
-/*
-	Clemson Engineers for Developing Countries
+
+/************************************************************************************
+    Rain CSS Coding Standards outlined at http://standards.mediarain.com/html-css
+    
+    Clemson Engineers for Developing Countries
 	Website CSS
 	Standard: CSS3
 	Description:	This is the CSS pertaining to the entire site.
-*/
 
-/*	Header Styling	*/
+*************************************************************************************/
+
+
+/* ************************************
+ *
+ * @Section: Header
+ *
+************************************* */
 
 #wrapper {
 	min-height: 100%;
@@ -149,7 +158,12 @@
    background-color: #EA6A20;
 }
 
-/*	Body Styling	*/
+
+/* ************************************
+ *
+ * @Section: Body
+ *
+************************************* */
 
 html,
 body {
@@ -259,7 +273,12 @@ body {
    text-decoration:underline; 
 }
 
-/*	Footer Styling	*/
+
+/* ************************************
+ *
+ * @Section: Footer
+ *
+************************************* */
 
 #footer-bg {
 	position: absolute;
