@@ -1,17 +1,122 @@
+/* ************************************
+ *
+ * @Section: Tabbed Interface
+ *
+************************************* */
+<style>
+  /* Tabbed example */
+  /* These styles can be changed as needed */
+  
+div.tabs {
+  min-height: 7em;	  	/* No height: can grow if :target doesn't work */
+  position: relative;	  /* Establish a containing block */
+  line-height: 1;		    /* Easier to calculate with */
+  z-index: 0            /* So that we can put other things behind */
+  }			
+
+div.tabs > div {
+  display: inline       /* We want the buttons all on one line */
+}	  
+
+div.tabs > div > a {
+  color: black;		                  	/* Looks more like a button than a link */
+  background: #F66733;		            /* Active tabs are Clemson Orange */
+  padding: 0.2em;		                  /* Some breathing space */
+  border: 0.1em outset #BBB;	        /* Make it look like a button */
+  border-bottom: 0.1em solid #CCC     /* Visually connect tab and tab body */
+} 
+
+div.tabs > div:not(:target) > a {
+  border-bottom: none;		            /* Make the bottom border disappear */
+  background: #F66733                 /* Inactive tabs are Clemson Orange */
+}		
+
+div.tabs > div:target > a :target #default2 > a {       /* Apply to the targeted item or to the default item */
+  border-bottom: 0.1em solid #CCC;                      /* Visually connect tab and tab body */
+  background: #F66733                 	                /* Active tab is Clemson Orange */
+}	
+
+div.tabs > div > div {
+  background: #F66733;		      /* Light gray */
+  z-index: -2;			            /* Behind, because the borders overlap */
+  left: 0; top: 1.3em;		      /* The top needs some calculation... */
+  bottom: 0; right: 0;		      /* Other sides flush with containing block */
+  overflow: auto;		            /* Scroll bar if needed */
+  padding: 0.3em;		            /* Looks better */
+  border: 0.1em outset #BBB	    /* 3D look */
+}
+
+div.tabs > div:not(:target) > div {     /* Protect CSS1 & CSS2 browsers */
+  position: absolute                    /* All these DIVs overlap */
+}		
+
+div.tabs > div:target > div, :target #default2 > div {
+  position: absolute;		              /* All these DIVs overlap */
+  z-index: -1	                        /* Raise it above the others */
+}		
+
+div.tabs :target {
+  outline: none
+}
+
+</style>
+
 <p>The organization and the class of CEDC function as a business with an heirarchical organization structure, allowing students to work in administrative-oriented teams (Finance, Current Operations, Communications, and Content Mangement), project-based teams, and education-oriented teams.  This structure allows the organization to function smoothly, while supporting the project operations on the ground in Haiti and sustaining organizational growth.</p>
 
 <h2>Organizational Structure</h2>
-<center><img src="http://people.clemson.edu/~cedc/images/Org Structure.png" alt="Organizational structure" width="800px"/></center>
+<!-- This link is yet working-->
+<!--<center><img src="OrgChart.png" alt="Organizational structure" width="800px"/></center>-->
 <p>Our organizational structure is constantly changing to meet our needs and to replace graduating students.  However, here is a brief overview of our managerial positions and branches:</p>
-<ul>
-<li>The organization is led by the <b>Program Director</b>.  The program director is responsible for delegating large tasks to the appropriate branch of the organization, hosting meetings and planning sessions, and ensuring that the organization has the necessary skill sets in its personel to run effectively.  Additionally, the Program Director helps communicate with the professional community.</li>
-<li>The <b>Assistant Program Director</b> supports the Program Director in their lead role, but also is charged with the future operations of the organization, including strategic planning for both the immediate and distant future.</li>
-<li>The <b>Current Operations</b> branch handles all of the logistical support involved in CEDC, including planning student trips, providing cultural awareness, and managing our budget.</li>
-<li>The <b>Project Management</b> branch has a wide variety of students, broken down into small project teams, working on everything from economic development to mushroom cultivation in Haiti.</li>
-<li>The <b>Communications</b> branch works to create a brand for CEDC and share the organization's unique accomplishments with not only the Clemson community, but the community at large.  The team also creates a set of marketing standards to help the organization grow.</li>
-<li>The <b>Content Manager</b> creates a digital record of the history in CEDC by organizing all of the deliverables in a central location where the students can access them, as well as overseeing web development.</li>
-<li>The <b>Academic Endeavors</b> branch is composed of graduate students who have been involved in the organization for a couple of years and are extremely familiar with it's operation.  This team develops the curriculum for the CEDC introductory course and teaches freshman and sophomores about the organization as well as our construction methods.  The graduate students also write grants to fund upcoming projects.</li>
-<li>The <b>Finance</b> branch manages the internal and external CEDC budget, with special focus on assisting the current operations branch and the interns in Haiti with trip planning, equipment reimbursements, and monthly stipend payments.</li>
-<li>The <b>Industry Advisor</b>, David Vaughn of Fluor, is the liasion between the classroom and field for the students.  The industry advisor is an indispensable resource to the CEDC Creative Inquiry Teams providing reviews and input to design tasks, helping to locate equipment and supplies for implementing project designs, and providing professional development support.  The industry advisor also helps to bridge the gap between the non-governmental organizations (NGOs), the Cange Community, and CEDC.</li>
-<li>The <b>Faculty Advisor</b>, Dr. Jennifer Ogle, plays an active role in assisting the students plan a meaningful program that is consistent with the mission of the group and with the aims of higher education.  She is responsible for monitoring the activities of CEDC, maintains fiscal responsibility, and upholds the best interests of the student and university.  The faculty advisor seeks funding for projects, interns, and travel through the Clemson University Creative Inquiry program for the various CEDC project teams and serves as the instructor of record for each of the associated courses.  The faculty advisor gives counsel and guidance when necessary, and encourages the development of initiative, responsibility, and leadership in student members.</li>
-</ul>
+
+<!--Tabbed list -->
+<!-- All tabs are functional as of 11/5/14 -->
+<div class=tabs>
+  <div id="ProgramDirector"><a href="#ProgramDirector">Program Director</a>
+      <div>The organization is led by the <b>Program Director</b>.  The program director is responsible for delegating large tasks to the appropriate branch of the organization, hosting meetings and planning sessions, and ensuring that the organization has the necessary skill sets in its personel to run effectively.  Additionally, the Program Director helps communicate with the professional community.
+      <br><br>Program Director: <b>Colby Cash</b>. He is in charge of general management, organization, and weekly planning for CEDC. All the other directors report to him, He leads class on Friday afternoons, and he leads directors' meetings on Wednesday nights. He also acts as a liaison with outside organizations and present to them on behalf of CEDC.</div>
+  </div> 
+  
+  <div id="AssistantProgramDirector"><a href="#AssistantProgramDirector">Assistant Program Director</a>
+    <div>
+      The <b>Assistant Program Director</b> supports the Program Director in their lead role, but also is charged with the future operations of the organization, including strategic planning for both the immediate and distant future.
+    </div>
+  </div>
+
+  <div id="CurrentOperations"><a href="#CurrentOperations">Current Operations</a>
+      <div>The <b>Current Operations</b> branch handles all of the logistical support involved in CEDC, including planning student trips, providing cultural awareness, and managing our budget.
+      <br><br>Current Operations Director: <b>Hunter Lee</b>. As director of Current Operations he coordinates the group to perform all of the trip planning for the organization and intern support.  This semester they were also tasked with researching areas for future expansion (Dominican Republic and India).  This semester they have planned the Fall Break Trip to Haiti, updated the Haiti Information Presentation that is given to the group before the trip, and researched the possible areas of future expansion.</div>
+  </div>  
+  
+  <div id="ProjectManagement"><a href="#ProjectManagement">Project Management</a>
+      <div>The <b>Project Management</b> branch has a wide variety of students, broken down into small project teams, working on everything from economic development to mushroom cultivation in Haiti.
+      <br><br>Project Director: <b>Stephen Sams</b>. He is in charge of the assistant project directors. He also helps sort out communication issues between groups and get them linked to contacts in Hati. If problems arise with the Project Management groups themselves, the assistant directors take care of the issue under his guidance. My main mission is to make sure the PM groups are sticking to their project scope, and that their research doesn't deviate from the main goal.</div>
+  </div>  
+  
+ <div id="TechnicalSolutions"><a href="#TechnicalSolutions">Technical Solutions Manager</a>
+      <div>The <b>Technical Solutions</b> branch creates a digital record of the history in CEDC by organizing all of the deliverables in a central location where the students can access them, as well as overseeing web development.
+      <br><br> Technical Solutions Director: <b>Mick Perry</b>. He manages a group that utilizes technology to improve CEDC's effectiveness in Haiti. Tech Sol's job is to find the programs that will do just that and to maintain the website and programs. In the future they will be utilizing the technology to directly help the Haitians.</div>
+  </div>   
+  
+  <!-- Somehow this tab doesnt work yet -->
+  <div id="Communications"><a href="#Communications">Communications</a>
+      <div>The <b>Communications</b> branch works to create a brand for CEDC and share the organization's unique accomplishments with not only the Clemson community, but the community at large.  The team also creates a set of marketing standards to help the organization grow.
+      <br><br>Communications Director: <b>Garth Hill</b>. He is in charge of keeping the team on task for internal and external communications as well as marketing, social media, and fundraising. They are responsible for keeping a strong pressence of campus as well as establish connections on and off campus. Their main goal is to ensure that the public view of CEDC lines up with the caliber of the group.</div>
+  </div>  
+  
+  <div id="Finance"><a href="#Finance">Finance</a>
+      <div>The <b>Finance</b> branch manages the internal and external CEDC budget, with special focus on assisting the current operations branch and the interns in Haiti with trip planning, equipment reimbursements, and monthly stipend payments.</div>
+  </div>  
+  
+  <div id="IndustryAdvisor"><a href="#IndustryAdvisor">Industry Advisor</a>
+      <div>The <b>Industry Advisor</b>, David Vaughn of Fluor, is the liasion between the classroom and field for the students.  The industry advisor is an indispensable resource to the CEDC Creative Inquiry Teams providing reviews and input to design tasks, helping to locate equipment and supplies for implementing project designs, and providing professional development support.  The industry advisor also helps to bridge the gap between the non-governmental organizations (NGOs), the Cange Community, and CEDC.</div>
+  </div>  
+  
+  <div id="FacultyAdvisor"><a href="#FacultyAdvisor">Faculty Advisor</a>
+      <div>The <b>Faculty Advisor</b>, Dr. Jennifer Ogle, plays an active role in assisting the students plan a meaningful program that is consistent with the mission of the group and with the aims of higher education.  She is responsible for monitoring the activities of CEDC, maintains fiscal responsibility, and upholds the best interests of the student and university.  The faculty advisor seeks funding for projects, interns, and travel through the Clemson University Creative Inquiry program for the various CEDC project teams and serves as the instructor of record for each of the associated courses.  The faculty advisor gives counsel and guidance when necessary, and encourages the development of initiative, responsibility, and leadership in student members.</div>
+  </div>
+  
+  <div id="DirectorOverview"><a href="#DirectorOverview">Director Overview</a>
+      <div>Click on the tabs to see our different directors and the descriptions of their jobs.</div>
+  </div>
+  
+</div>

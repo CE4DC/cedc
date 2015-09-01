@@ -1,11 +1,20 @@
-/*
-	Clemson Engineers for Developing Countries
+
+/************************************************************************************
+    Rain CSS Coding Standards outlined at http://standards.mediarain.com/html-css
+    
+    Clemson Engineers for Developing Countries
 	Website CSS
 	Standard: CSS3
 	Description:	This is the CSS pertaining to the entire site.
-*/
 
-/*	Header Styling	*/
+*************************************************************************************/
+
+
+/* ************************************
+ *
+ * @Section: Header
+ *
+************************************* */
 
 #wrapper {
 	min-height: 100%;
@@ -80,7 +89,8 @@
 
 #header-nav li {
    vertical-align: top;
-	display: table-cell;
+	display: inline-table-cell; /* Changed to Inline-table-cell */
+	*display: inline; /* IE7 */
 	padding: 0 20px;
 }
 
@@ -148,7 +158,12 @@
    background-color: #EA6A20;
 }
 
-/*	Body Styling	*/
+
+/* ************************************
+ *
+ * @Section: Body
+ *
+************************************* */
 
 html,
 body {
@@ -159,6 +174,14 @@ body {
 
 #content-wrapper {
 	padding-top: 180px;
+	padding-bottom: 180px;
+	width: 960px;
+	margin: 0 auto;
+}
+
+#content-wrapper-light-grey {
+	background-color:#D3D3D3;
+	padding-top: 280px;
 	padding-bottom: 180px;
 	width: 960px;
 	margin: 0 auto;
@@ -250,7 +273,12 @@ body {
    text-decoration:underline; 
 }
 
-/*	Footer Styling	*/
+
+/* ************************************
+ *
+ * @Section: Footer
+ *
+************************************* */
 
 #footer-bg {
 	position: absolute;
@@ -270,7 +298,7 @@ body {
 }
 
 #footer-content {
-	padding: 16px;
+	padding: 0px; /*changed from 16*/
 	color: #86898C;
 	font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif;
 }
