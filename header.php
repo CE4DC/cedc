@@ -13,7 +13,7 @@
          </div>
          <div id="header-motto">
             <span style="color: #86898C">Serving&nbsp;the&nbsp;developing world...</span><br>
-            <span style="color: #3A4958">&nbsp;&nbsp;&nbsp;&nbsp;Developing&nbsp;the&nbsp;students&nbsp;who&nbsp;serve.</span>
+            <span style="color: #3A4958">&nbsp;&nbsp;&nbsp;&nbsp;Developing&nbsp;those&nbsp;who&nbsp;serve.</span>
          </div>
       </div>
    </div>
