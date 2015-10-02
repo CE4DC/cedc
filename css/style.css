@@ -164,6 +164,14 @@ body {
 	margin: 0 auto;
 }
 
+#content-wrapper-light-grey {
+	background-color:#D3D3D3;
+	padding-top: 280px;
+	padding-bottom: 180px;
+	width: 960px;
+	margin: 0 auto;
+}
+
 #content-body {
 	padding: 20px;
    font-size: 14px;
