@@ -1,20 +1,11 @@
-
-/************************************************************************************
-    Rain CSS Coding Standards outlined at http://standards.mediarain.com/html-css
-    
-    Clemson Engineers for Developing Countries
+/*
+	Clemson Engineers for Developing Countries
 	Website CSS
 	Standard: CSS3
 	Description:	This is the CSS pertaining to the entire site.
+*/
 
-*************************************************************************************/
-
-
-/* ************************************
- *
- * @Section: Header
- *
-************************************* */
+/*	Header Styling	*/
 
 #wrapper {
 	min-height: 100%;
@@ -89,8 +80,7 @@
 
 #header-nav li {
    vertical-align: top;
-	display: inline-table-cell; /* Changed to Inline-table-cell */
-	*display: inline; /* IE7 */
+	display: table-cell;
 	padding: 0 20px;
 }
 
@@ -116,7 +106,7 @@
    position: relative;
    width: 960px;
    margin: 0 auto;
-}
+}*/
 
 .header-nav-img {
    position: absolute;
@@ -131,7 +121,7 @@
 
 #header-nav a:hover ~ .header-nav-img {
    visibility: visible;
-}*/
+}
 
 #header-nav a:active {
 	color: #FFFFFF;
@@ -158,12 +148,7 @@
    background-color: #EA6A20;
 }
 
-
-/* ************************************
- *
- * @Section: Body
- *
-************************************* */
+/*	Body Styling	*/
 
 html,
 body {
@@ -174,14 +159,6 @@ body {
 
 #content-wrapper {
 	padding-top: 180px;
-	padding-bottom: 180px;
-	width: 960px;
-	margin: 0 auto;
-}
-
-#content-wrapper-light-grey {
-	background-color:#D3D3D3;
-	padding-top: 280px;
 	padding-bottom: 180px;
 	width: 960px;
 	margin: 0 auto;
@@ -273,12 +250,7 @@ body {
    text-decoration:underline; 
 }
 
-
-/* ************************************
- *
- * @Section: Footer
- *
-************************************* */
+/*	Footer Styling	*/
 
 #footer-bg {
 	position: absolute;
@@ -298,7 +270,7 @@ body {
 }
 
 #footer-content {
-	padding: 0px; /*changed from 16*/
+	padding: 16px;
 	color: #86898C;
 	font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif;
 }
