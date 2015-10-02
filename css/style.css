@@ -20,6 +20,7 @@
 	top: 0px;
 	left: 0px;
 	text-align: center;
+	background-image: url(../img/header-bg.jpg);
 	background-color: #FFFFFF;
 	height: 160px;
 }
@@ -33,7 +34,7 @@
 #header-motto {
 	position: absolute;
 	top: 64px;
-	left: 340px;
+	left: 440px;
 	text-align: left;
 	font-size: 16px;
 	font-family: "Century Gothic", "Helvetica Neue", "Lucida Grande", "Lucida Sans Unicode", arial, sans-serif;
@@ -42,8 +43,8 @@
 #header-logo {
 	position: absolute;
    text-decoration: none;
-	top: 14px;
-	left: 0px;
+	top:  14px;
+	left: 100px;
 }
 
 #header-logo img {
