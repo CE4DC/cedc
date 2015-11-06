@@ -34,7 +34,7 @@
             </div>
             <div id="footer-copy">
                <p>
-                  &copy; 2014 Clemson Engineers for Developing Countries
+                  &copy; 2015 Clemson Engineers for Developing Countries
                </p>
             </div>
          </div>

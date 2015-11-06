@@ -1,16 +1,10 @@
-/* ************************************
- *
- * @Section: Tabbed Interface
- *
-************************************* */
 <style>
   /* Tabbed example */
   /* These styles can be changed as needed */
   
 div.tabs {
-  min-height: 7em;	  	/* No height: can grow if :target doesn't work */
+  min-height: 10em;	  	/* No height: can grow if :target doesn't work */
   position: relative;	  /* Establish a containing block */
-  line-height: 1;		    /* Easier to calculate with */
   z-index: 0            /* So that we can put other things behind */
   }			
 
@@ -20,7 +14,6 @@ div.tabs > div {
 
 div.tabs > div > a {
   color: black;		                  	/* Looks more like a button than a link */
-  background: #F66733;		            /* Active tabs are Clemson Orange */
   padding: 0.2em;		                  /* Some breathing space */
   border: 0.1em outset #BBB;	        /* Make it look like a button */
   border-bottom: 0.1em solid #CCC     /* Visually connect tab and tab body */
@@ -28,22 +21,24 @@ div.tabs > div > a {
 
 div.tabs > div:not(:target) > a {
   border-bottom: none;		            /* Make the bottom border disappear */
-  background: #F66733                 /* Inactive tabs are Clemson Orange */
+  background: #3A4958;                 /* Inactive tabs are Clemson Orange */
 }		
 
 div.tabs > div:target > a :target #default2 > a {       /* Apply to the targeted item or to the default item */
   border-bottom: 0.1em solid #CCC;                      /* Visually connect tab and tab body */
-  background: #F66733                 	                /* Active tab is Clemson Orange */
+  background: #F66733;              	                /* Active tab is Clemson Orange */
 }	
 
 div.tabs > div > div {
   background: #F66733;		      /* Light gray */
   z-index: -2;			            /* Behind, because the borders overlap */
-  left: 0; top: 1.3em;		      /* The top needs some calculation... */
+  height: 200px;
+  left: 0; top: 5em;		      /* The top needs some calculation... */
   bottom: 0; right: 0;		      /* Other sides flush with containing block */
   overflow: auto;		            /* Scroll bar if needed */
-  padding: 0.3em;		            /* Looks better */
+  padding: 0.5em;		            /* Looks better */
   border: 0.1em outset #BBB	    /* 3D look */
+	line-height: 1;		    /* Easier to calculate with */
 }
 
 div.tabs > div:not(:target) > div {     /* Protect CSS1 & CSS2 browsers */
@@ -95,7 +90,7 @@ div.tabs :target {
  <div id="TechnicalSolutions"><a href="#TechnicalSolutions">Technical Solutions Manager</a>
       <div>The <b>Technical Solutions</b> branch creates a digital record of the history in CEDC by organizing all of the deliverables in a central location where the students can access them, as well as overseeing web development.
       <br><br> Technical Solutions Director: <b>Mick Perry</b>. He manages a group that utilizes technology to improve CEDC's effectiveness in Haiti. Tech Sol's job is to find the programs that will do just that and to maintain the website and programs. In the future they will be utilizing the technology to directly help the Haitians.</div>
-  </div>   
+  </div>
   
   <!-- Somehow this tab doesnt work yet -->
   <div id="Communications"><a href="#Communications">Communications</a>
