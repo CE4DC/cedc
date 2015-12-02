@@ -25,8 +25,6 @@
                   <li style="font-weight: normal">|</li>
                   <li><a href="page.php?page=intern&amp;name=In%20the%20Field">In the Field</a></li>
                   <li style="font-weight: normal">|</li>
-                  <li><a href="page.php?page=calendar&amp;name=Calendar">Calendar</a></li>
-                  <li style="font-weight: normal">|</li>
                   <li><a href="page.php?page=contact&amp;name=Contact%20Us">Contact</a></li>
                   <li style="font-weight: normal">|</li>
                   <li><a href="page.php?page=gallery&amp;name=Gallery">Gallery</a></li>
