@@ -7,6 +7,7 @@
 
 <div id="wrapper">
    <div id="header-bg">
+   	<div id="header-opacity"></div>
       <div id="header">
          <div id="header-logo">
             <a href="page.php?page=index&amp;name=Home"><img src="./img/cedclogo.png" alt="CEDC logo"/></a>
