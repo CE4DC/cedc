@@ -21,6 +21,7 @@
 	left: 0px;
 	text-align: center;
 	background-image: url(../img/header-bg.jpg);
+	background-position: center top;
 	background-color: #FFFFFF;
 	height: 160px;
 }
